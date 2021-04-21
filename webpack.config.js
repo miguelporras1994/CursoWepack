@@ -32,11 +32,11 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use :{
-            loader: 'babel-loader',
+            loader: 'babel-loader'
         }
      },
      {
-         test: /\.css$/i,
+         test: /\.s?css$/i,
          use:[ MiniCssExtractPlugin.loader,
             'css-loader',
          ],
@@ -69,7 +69,7 @@ module.exports = {
             filename: './index.html'
         }),
         new  MiniCssExtractPlugin({
-            filename: 'assets/[name].[contenthash].css'
+            filename: './assets/css/[name].[contenthash].css'
         }),
         new CopyPlugin({
             patterns:[{
