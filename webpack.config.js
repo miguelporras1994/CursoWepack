@@ -68,7 +68,7 @@ module.exports = {
             template:'./public/index.html',
             filename: './index.html'
         }),
-        new  MiniCssExtractPlungin({
+        new  MiniCssExtractPlugin({
             filename: 'assets/[name].[contenthash].css'
         }),
         new CopyPlugin({
